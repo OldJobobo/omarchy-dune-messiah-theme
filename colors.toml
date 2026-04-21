@@ -1,0 +1,37 @@
+
+  # Accent and UI colors
+  accent = "#8c4f2a"
+  active_border_color = "#a45e33"
+  active_tab_background = "#8c4f2a"
+
+  # Cursor colors
+  cursor = "#47362b"
+
+  # Primary colors
+  foreground = "#47362b"
+  background = "#dcd8d6"
+
+  # Selection colors
+  selection_foreground = "#f3ece7"
+  selection_background = "#8c4f2a"
+
+  # Normal colors (ANSI 0-7)
+  color0 = "#dcd8d6" # base
+  color1 = "#7a3827" # danger / deleted / error
+  color2 = "#6f5a36" # success / created / strings
+  color3 = "#8a5d24" # warning / constants
+  color4 = "#8c4f2a" # accent / modified / keywords
+  color5 = "#6e4633" # secondary accent / visited / UI alt
+  color6 = "#355f68" # info / links / types
+  color7 = "#47362b" # primary text
+
+  # Bright colors (ANSI 8-15)
+  color8 = "#6e6259"  # muted / comments / borders
+  color9 = "#5f261c"  # bright danger
+  color10 = "#5f4c2a" # bright success
+  color11 = "#704713" # bright warning
+  color12 = "#a45e33" # bright accent / active border
+  color13 = "#8b5a40" # bright secondary accent
+  color14 = "#244c56" # bright info
+  color15 = "#2f2118" # deepest text / high emphasis
+

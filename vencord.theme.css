@@ -1,0 +1,318 @@
+/**
+* @name Omarchy Dune Messiah Vencord
+* @author @oldjobobo
+* @version 0.2.0
+* @description Dune Messiah light-mode Discord skin layered on the Omarchy Dune Vencord structure
+**/
+
+:root {
+  --color00: #dcd8d6;
+  --color01: #7a3827;
+  --color02: #6f5a36;
+  --color03: #8a5d24;
+  --color04: #8c4f2a;
+  --color05: #6e4633;
+  --color06: #355f68;
+  --color07: #47362b;
+  --color08: #6e6259;
+  --color09: #5f261c;
+  --color10: #5f4c2a;
+  --color11: #704713;
+  --color12: #a45e33;
+  --color13: #8b5a40;
+  --color14: #244c56;
+  --color15: #2f2118;
+
+  --item-surface-0: color-mix(in srgb, var(--color00) 90%, white);
+  --item-surface-1: var(--color00);
+  --item-surface-2: color-mix(in srgb, var(--color08) 12%, var(--color00));
+  --item-surface-3: color-mix(in srgb, var(--color08) 22%, var(--color00));
+  --item-surface-4: color-mix(in srgb, var(--color05) 28%, var(--color00));
+
+  --item-text: var(--color07);
+  --item-text-muted: color-mix(in srgb, var(--color08) 72%, var(--color00));
+  --item-text-contrast: var(--color15);
+  --item-text-inverse: #f3ece7;
+
+  --item-accent: var(--color04);
+  --item-accent-strong: var(--color12);
+  --item-danger: var(--color01);
+  --item-highlight: var(--color06);
+  --item-unread: var(--color12);
+
+  --item-mention-glow-1: var(--color06);
+  --item-mention-glow-2: var(--color12);
+  --item-mention-glow-3: var(--color02);
+
+  --item-message-text: var(--item-text);
+  --item-channel-name: color-mix(in srgb, var(--item-text-muted) 82%, var(--color08));
+  --item-channel-name-unread: var(--item-text);
+  --item-channel-name-selected: var(--item-highlight);
+  --item-username: var(--item-accent);
+  --item-mention-foreground: var(--item-text);
+  --item-mention-text: var(--item-text-muted);
+
+  --rt82-grid: linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color12) 8%, transparent) 0 1px,
+      transparent 1px 100%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color12) 6%, transparent) 0 1px,
+      transparent 1px 100%
+    );
+  --rt82-scanline: repeating-linear-gradient(
+    180deg,
+    color-mix(in srgb, white 12%, transparent) 0,
+    transparent 2px,
+    color-mix(in srgb, var(--color15) 5%, transparent) 4px
+  );
+  --rt82-glow: 0 0 24px color-mix(in srgb, var(--item-accent) 16%, transparent);
+
+  --font-primary: "Chakra Petch", "Figtree", "gg sans", sans-serif;
+  --font-display: "VT323", "Chakra Petch", "gg sans", sans-serif;
+  --eh-letter-spacing: 0.45px;
+}
+
+.theme-light,
+.theme-dark,
+.theme-darker,
+.theme-midnight,
+.visual-refresh {
+  --background-primary: var(--item-surface-1) !important;
+  --background-secondary: var(--item-surface-0) !important;
+  --background-secondary-alt: var(--item-surface-1) !important;
+  --background-tertiary: var(--item-surface-0) !important;
+  --background-accent: var(--item-surface-2) !important;
+  --background-floating: var(--item-surface-2) !important;
+
+  --background-base-lowest: var(--item-surface-0) !important;
+  --background-base-lower: var(--item-surface-0) !important;
+  --background-base-low: var(--item-surface-1) !important;
+  --background-base-tertiary: var(--item-surface-0) !important;
+
+  --background-surface-high: var(--item-surface-2) !important;
+  --background-surface-higher: var(--item-surface-2) !important;
+  --background-surface-highest: var(--item-surface-3) !important;
+  --bg-surface-raised: var(--item-surface-2) !important;
+  --bg-surface-overlay: var(--item-surface-1) !important;
+  --bg-base-secondary: var(--item-surface-0) !important;
+  --bg-base-tertiary: var(--item-surface-0) !important;
+  --bg-overlay-2: var(--item-surface-2) !important;
+  --bg-overlay-3: var(--item-surface-3) !important;
+
+  --background-modifier-accent: color-mix(in srgb, var(--item-surface-3) 82%, transparent) !important;
+  --background-modifier-hover: color-mix(in srgb, var(--item-accent) 10%, var(--item-surface-2)) !important;
+  --background-modifier-active: color-mix(in srgb, var(--item-accent) 16%, var(--item-surface-2)) !important;
+  --background-modifier-selected: color-mix(in srgb, var(--item-highlight) 18%, var(--item-surface-2)) !important;
+  --background-mentioned: linear-gradient(90deg, color-mix(in srgb, var(--item-accent) 16%, var(--item-surface-1)) 0%, var(--item-surface-1) 100%) !important;
+  --background-mentioned-hover: linear-gradient(90deg, color-mix(in srgb, var(--item-accent) 24%, var(--item-surface-1)) 0%, var(--item-surface-1) 100%) !important;
+  --mention-background: linear-gradient(90deg, color-mix(in srgb, var(--item-accent) 20%, var(--item-surface-1)) 0%, var(--item-surface-1) 100%) !important;
+  --mention-foreground: var(--item-mention-foreground) !important;
+
+  --text-normal: var(--item-text) !important;
+  --text-muted: var(--item-text-muted) !important;
+  --text-primary: var(--item-text) !important;
+  --text-secondary: color-mix(in srgb, var(--item-text) 70%, var(--item-text-muted)) !important;
+  --header-primary: var(--item-text) !important;
+  --header-secondary: color-mix(in srgb, var(--item-text) 72%, var(--item-text-muted)) !important;
+  --interactive-normal: var(--item-text) !important;
+  --interactive-hover: var(--item-text-contrast) !important;
+  --interactive-active: var(--item-text-contrast) !important;
+  --interactive-muted: var(--item-channel-name) !important;
+
+  --channels-default: var(--item-channel-name) !important;
+  --channels-default-muted: color-mix(in srgb, var(--item-channel-name) 56%, transparent) !important;
+  --channels-default-unread: var(--item-channel-name-unread) !important;
+
+  --brand-500: var(--item-accent) !important;
+  --brand-560: color-mix(in srgb, var(--item-accent) 18%, var(--item-surface-1)) !important;
+  --text-link: var(--item-highlight) !important;
+  --channel-icon: var(--item-accent) !important;
+  --focus-primary: var(--item-highlight) !important;
+  --input-border-focus: var(--item-highlight) !important;
+
+  --button-filled-brand-background: color-mix(in srgb, var(--item-accent) 82%, var(--item-surface-1)) !important;
+  --button-filled-brand-background-hover: color-mix(in srgb, var(--item-accent-strong) 84%, var(--item-surface-1)) !important;
+  --button-filled-brand-text: var(--item-text-inverse) !important;
+
+  --button-positive-background: color-mix(in srgb, var(--color02) 82%, var(--item-surface-1)) !important;
+  --button-positive-background-hover: color-mix(in srgb, var(--color10) 84%, var(--item-surface-1)) !important;
+  --button-positive-text: var(--item-text-inverse) !important;
+
+  --button-secondary-background: var(--item-surface-3) !important;
+  --button-secondary-background-hover: var(--item-surface-2) !important;
+  --button-secondary-text: var(--item-text) !important;
+
+  --button-danger-background: var(--item-danger) !important;
+  --button-danger-background-hover: color-mix(in srgb, var(--item-danger) 88%, var(--color09)) !important;
+  --button-danger-text: var(--item-text-inverse) !important;
+
+  --status-positive: var(--color02) !important;
+  --status-warning: var(--item-accent) !important;
+  --status-danger: var(--item-danger) !important;
+}
+
+body {
+  letter-spacing: var(--eh-letter-spacing);
+  text-shadow: 0 0 1px color-mix(in srgb, white 22%, transparent);
+}
+
+[class*="appMount"]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: var(--rt82-scanline);
+  mix-blend-mode: multiply;
+  opacity: 0.12;
+}
+
+[class*="sidebar"],
+[class*="chatContent"] {
+  border: 1px solid color-mix(in srgb, var(--item-highlight) 18%, transparent) !important;
+  border-radius: 12px !important;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--item-accent) 10%, transparent), var(--rt82-glow) !important;
+  background-image: var(--rt82-grid) !important;
+  background-size: 24px 24px, 24px 24px !important;
+}
+
+[class*="chatContent"] {
+  background-color: color-mix(in srgb, var(--item-surface-1) 92%, var(--item-surface-0)) !important;
+  margin: 0 10px 10px 0 !important;
+  border-left-color: transparent !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+[class*="sidebar"] {
+  background-color: color-mix(in srgb, var(--item-surface-0) 90%, var(--item-surface-1)) !important;
+  margin: 0 0 10px 10px !important;
+  border-right-color: transparent !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.sidebarResizeHandle__5e434,
+[class*="sidebarResizeHandle"] {
+  width: 8px !important;
+  margin: 0 -4px !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+}
+
+[class*="title"],
+[class*="topic"] {
+  font-family: var(--font-display) !important;
+  letter-spacing: 0.75px;
+}
+
+[class*="username"]:not([style]) {
+  color: var(--item-username) !important;
+  text-shadow: 0 0 10px color-mix(in srgb, var(--item-username) 24%, transparent);
+}
+
+:is(.theme-light, .theme-dark, .theme-darker, .theme-midnight, .visual-refresh)
+  :is([class*="messageContent"], [class*="markup"]) {
+  color: var(--item-message-text) !important;
+}
+
+a[data-list-item-id^="channels___"][aria-selected="true"] {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--item-accent) 20%, var(--item-surface-2)) 0%,
+    color-mix(in srgb, var(--item-highlight) 14%, var(--item-surface-2)) 100%
+  ) !important;
+  box-shadow: inset 3px 0 0 0 var(--item-accent), inset 0 0 0 1px color-mix(in srgb, var(--item-highlight) 22%, transparent) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+a[data-list-item-id^="channels___"]:hover {
+  background-color: color-mix(in srgb, var(--item-accent) 10%, var(--item-surface-2)) !important;
+  box-shadow: inset 3px 0 0 0 var(--item-danger) !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+}
+
+a[data-list-item-id^="channels___"] svg,
+a[data-list-item-id^="channels___"] svg path {
+  fill: color-mix(in srgb, var(--item-accent) 58%, var(--item-surface-2)) !important;
+  color: color-mix(in srgb, var(--item-accent) 58%, var(--item-surface-2)) !important;
+}
+
+a[data-list-item-id^="channels___"][class*="modeUnread"] svg,
+a[data-list-item-id^="channels___"][class*="modeUnread"] svg path,
+[class*="modeUnread"] [class*="icon__"],
+[class*="modeUnread"] [class*="icon__"] path {
+  fill: var(--item-highlight) !important;
+  color: var(--item-highlight) !important;
+}
+
+a[data-list-item-id^="channels___"]:not([class*="modeUnread"]):not([aria-selected="true"]) [class*="name"] *,
+li[class*="containerDefault"]:not([class*="modeUnread"]):not([class*="selected"]):not([class*="modeSelected"]) [class*="name"] *,
+#channels [class*="name__"] {
+  color: var(--item-channel-name) !important;
+}
+
+a[data-list-item-id^="channels___"][class*="modeUnread"] [class*="name"] *,
+li[class*="containerDefault"][class*="modeUnread"] [class*="name"] *,
+#channels [class*="modeUnread"] [class*="name__"] {
+  color: var(--item-channel-name-unread) !important;
+  font-weight: 600 !important;
+}
+
+#channels [class*="modeSelected"] [class*="name__"] {
+  color: var(--item-channel-name-selected) !important;
+  font-weight: 700 !important;
+}
+
+[class*="channelTextArea"] {
+  border: 1px solid color-mix(in srgb, var(--item-highlight) 16%, transparent) !important;
+  border-radius: 10px !important;
+  overflow: visible !important;
+}
+
+[class*="channelTextArea"]:focus-within {
+  box-shadow: 0 0 0 1px var(--item-highlight) inset, 0 0 14px color-mix(in srgb, var(--item-highlight) 26%, transparent) !important;
+  border-color: var(--item-highlight) !important;
+}
+
+[class*="channelTextArea"] [class*="scrollableContainer"],
+[class*="channelTextArea"] [class*="themedBackground"] {
+  border-radius: inherit !important;
+  overflow: visible !important;
+}
+
+[class*="textAreaForPostCreation"] {
+  padding: 8px 10px !important;
+  box-sizing: border-box !important;
+}
+
+[id^="chat-messages-"] [class*="messageListItem"]:hover,
+[id^="chat-messages-"] [class*="messageListItem"]:hover > [class*="message"],
+[id^="chat-messages-"] [class*="messageListItem"]:hover [class*="contents"] {
+  background: color-mix(in srgb, var(--item-highlight) 7%, var(--item-surface-1)) !important;
+  border-radius: 10px !important;
+}
+
+div[class*="unreadBar"],
+span[class*="unreadBar"],
+div[class*="unreadPill"],
+span[class*="unreadPill"],
+div[class*="numberBadge"],
+span[class*="numberBadge"],
+div[class*="textBadge"],
+span[class*="textBadge"] {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--item-accent) 88%, var(--item-surface-2)) 0%,
+    color-mix(in srgb, var(--item-highlight) 72%, var(--item-surface-2)) 100%
+  ) !important;
+  color: var(--item-text-inverse) !important;
+  box-shadow: 0 0 10px color-mix(in srgb, var(--item-accent) 28%, transparent) !important;
+}
