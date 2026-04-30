@@ -24,13 +24,13 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-dune-messiah-theme
 
 <table>
   <tr>
-    <td><img src="backgrounds/4kdune-movie-screencaps_LE_upscale_prime.jpg" width="220" alt="Dune Messiah wallpaper 1"></td>
-    <td><img src="backgrounds/4kdune-movie-screencaps_LE_upscale_prime%20(1).jpg" width="220" alt="Dune Messiah wallpaper 2"></td>
-    <td><img src="backgrounds/wallhaven-5y52y5_LE_upscale_prime.jpg" width="220" alt="Dune Messiah wallpaper 3"></td>
+    <td><img src="backgrounds/01-wind-on-sand.jpg" width="220" alt="Wind on Sand"></td>
+    <td><img src="backgrounds/02-iron-tide.jpg" width="220" alt="Iron Tide"></td>
+    <td><img src="backgrounds/03-the-prophetess.jpg" width="220" alt="The Prophetess"></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/wallhaven-k81pzm_LE_upscale_balanced.jpg" width="220" alt="Dune Messiah wallpaper 4"></td>
-    <td><img src="backgrounds/wallhaven-zpqlzw_LE_upscale_prime.jpg" width="220" alt="Dune Messiah wallpaper 5"></td>
+    <td><img src="backgrounds/04-ten-thousand.jpg" width="220" alt="Ten Thousand"></td>
+    <td><img src="backgrounds/05-the-golden-path.jpg" width="220" alt="The Golden Path"></td>
   </tr>
 </table>
 
