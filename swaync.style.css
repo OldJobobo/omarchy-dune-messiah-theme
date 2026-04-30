@@ -98,6 +98,10 @@ control-center {
   border-radius: 0;
 }
 
+.widget-dnd > switch:checked slider {
+  background-color: #dcd8d6;
+}
+
 /* ── Close button ─────────────────────────────────────────────────── */
 
 .close-button {
@@ -112,8 +116,8 @@ control-center {
 }
 
 .close-button:hover {
-  background-color: rgba(227, 37, 53, 0.12);
-  border-color: rgba(227, 37, 53, 0.40);
+  background-color: rgba(122, 56, 39, 0.12);
+  border-color: rgba(122, 56, 39, 0.40);
   color: #47362b;
 }
 
@@ -142,9 +146,9 @@ control-center {
 
 .notification-row .notification-background .notification.critical,
 .notification-group.critical .notification {
-  border-color: rgba(227, 37, 53, 0.48);
+  border-color: rgba(122, 56, 39, 0.48);
   box-shadow:
-    inset 2px 0 0 #e32535,
+    inset 2px 0 0 #7a3827,
     0 10px 22px rgba(47, 33, 24, 0.16),
     0 2px 8px rgba(47, 33, 24, 0.10);
 }
@@ -268,12 +272,12 @@ notificationwindow .notification-row:first-child .notification-background {
 }
 
 .notification-row trough {
-  background: linear-gradient(180deg, rgba(110, 98, 89, 0.5), rgba(212, 203, 197, 0.88));
-  border: 1px solid rgba(36, 76, 86, 0.28);
+  background: rgba(212, 203, 197, 0.72);
+  border: 1px solid rgba(36, 76, 86, 0.22);
 }
 
 .notification-row progress {
-  background: linear-gradient(90deg, #8c4f2a 0%, #8b5a40 52%, #244c56 82%);
+  background: #8c4f2a;
 }
 
 /*    __                     */

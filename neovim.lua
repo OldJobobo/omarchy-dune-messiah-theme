@@ -78,6 +78,16 @@ return {
 
             -- Enable hot reload
             require("aether.hotreload").setup()
+
+            -- inline code in markdown: aether maps this to orange-on-highlight-bg, unreadable
+            -- must run after ColorScheme so hotreload doesn't wipe it
+            vim.api.nvim_create_autocmd("ColorScheme", {
+                pattern = "aether",
+                callback = function()
+                    vim.api.nvim_set_hl(0, "@markup.raw.markdown_inline", { fg = "#355f68", bg = "#d4cbc5" })
+                end,
+            })
+            vim.api.nvim_set_hl(0, "@markup.raw.markdown_inline", { fg = "#355f68", bg = "#d4cbc5" })
         end,
     },
     {
