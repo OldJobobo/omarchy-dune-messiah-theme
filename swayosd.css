@@ -31,11 +31,105 @@
 /*                                                                                */
 /*                                                                                */
 
-@define-color background-color #dcd8d6;
-@define-color border-color #6e6259;
-@define-color label #47362b;
-@define-color image #47362b;
-@define-color progress #8c4f2a;
+@define-color sand-base   #dcd8d6;
+@define-color panel       #ebe5e1;
+@define-color panel-edge  #d4cbc5;
+@define-color border-muted #6e6259;
+@define-color border-frame #8b5a40;
+@define-color accent      #244c56;
+@define-color copper      #8c4f2a;
+@define-color text        #47362b;
+
+window:not(:backdrop),
+window:backdrop {
+    border: none;
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 12px;
+}
+
+window:not(:backdrop) #container,
+window:backdrop #container {
+    border: 1px solid alpha(@border-frame, 0.56);
+    border-radius: 0;
+    padding: 20px;
+    background-color: alpha(@panel, 0.98);
+    background-image:
+        radial-gradient(circle at top center, alpha(@border-frame, 0.10), transparent 52%),
+        linear-gradient(180deg, alpha(@panel, 0.995), alpha(@sand-base, 0.985));
+    background-clip: padding-box;
+    box-shadow:
+        inset 0 1px rgba(255, 255, 255, 0.30),
+        0 10px 22px rgba(47, 33, 24, 0.16),
+        0 2px 6px rgba(47, 33, 24, 0.10);
+    min-width: 280px;
+}
+
+window:not(:backdrop) image,
+window:backdrop image {
+    color: @text;
+    -gtk-icon-size: 22px;
+    margin: 0 14px 0 0;
+}
+
+window:not(:backdrop) label,
+window:backdrop label {
+    color: @text;
+    font-family: "IBM Plex Sans", "Liberation Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    min-width: 52px;
+    margin: 0 0 0 14px;
+    padding: 0;
+}
+
+window:not(:backdrop) progressbar,
+window:backdrop progressbar {
+    min-width: 220px;
+    min-height: 10px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    border-radius: 0;
+}
+
+window:not(:backdrop) progressbar trough,
+window:backdrop progressbar trough {
+    background-color: alpha(@panel-edge, 0.88);
+    background-image: linear-gradient(180deg, alpha(@border-muted, 0.50), alpha(@panel-edge, 0.88));
+    border: 1px solid alpha(@border-frame, 0.28);
+    border-radius: 0;
+    min-height: 10px;
+}
+
+window:not(:backdrop) progressbar progress,
+window:backdrop progressbar progress {
+    background-color: @copper;
+    background-image: linear-gradient(90deg, @copper 0%, @border-frame 52%, @accent 82%);
+    border-radius: 0;
+    min-height: 10px;
+}
+
+progressbar,
+trough {
+    min-height: 10px;
+    border-radius: 0;
+}
+
+trough {
+    min-height: 10px;
+    padding: 0;
+    box-shadow: none;
+}
+
+progress {
+    min-height: 10px;
+    border-radius: 0;
+}
 
 /*    __                     */
 /*   /\_\/|\  _|             */
