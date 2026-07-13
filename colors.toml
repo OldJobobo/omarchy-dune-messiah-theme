@@ -74,4 +74,30 @@
 #   /|  _  |)   _  |)   _  
 #  | | / \_|/\_/ \_|/\_/ \_
 #   \|/\_/  \/ \_/  \/ \_/ 
-#   (|                     
+#   (|
+# Omarchy 4 semantic palette roles. Keep these aligned with color0-color15.
+mode = "light"
+bg = "#dcd8d6"
+lighter_bg = "#dcd8d6"
+selection = "#8c4f2a"
+muted = "#6e6259"
+dark_fg = "#6e6259"
+fg = "#47362b"
+light_fg = "#47362b"
+bright_fg = "#2f2118"
+red = "#7a3827"
+green = "#6f5a36"
+yellow = "#8a5d24"
+blue = "#8c4f2a"
+magenta = "#6e4633"
+cyan = "#355f68"
+orange = "#8a5d24"
+brown = "#452f12"
+dark_bg = "#a5a2a1"
+darker_bg = "#6e6c6b"
+bright_red = "#5f261c"
+bright_green = "#5f4c2a"
+bright_yellow = "#704713"
+bright_blue = "#a45e33"
+bright_magenta = "#8b5a40"
+bright_cyan = "#244c56"
