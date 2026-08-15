@@ -108,7 +108,7 @@ control-center {
   background: transparent;
   border: 1px solid rgba(110, 98, 89, 0.82);
   border-radius: 0;
-  color: #6e6259;
+  color: #675b53;
   min-width: 24px;
   min-height: 24px;
   padding: 0;
@@ -210,7 +210,7 @@ notificationwindow .notification-row:first-child .notification-background {
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body {
-  color: #6e6259;
+  color: #675b53;
   font-family: "IBM Plex Sans", "Liberation Sans", sans-serif;
   font-size: 11px;
   font-weight: 400;
@@ -218,7 +218,7 @@ notificationwindow .notification-row:first-child .notification-background {
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .text-box .time {
-  color: #6e6259;
+  color: #675b53;
   font-family: "IBM Plex Sans", "Liberation Sans", sans-serif;
   font-size: 11px;
   text-shadow: none;
@@ -250,7 +250,7 @@ notificationwindow .notification-row:first-child .notification-background {
 }
 
 .notification-group .notification-group-headers {
-  color: #6e6259;
+  color: #675b53;
   font-family: "IBM Plex Sans", "Liberation Sans", sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -259,7 +259,7 @@ notificationwindow .notification-row:first-child .notification-background {
 }
 
 .notification-group .notification-group-icon {
-  color: #6e6259;
+  color: #675b53;
 }
 
 /* ── Progress bar ─────────────────────────────────────────────────── */

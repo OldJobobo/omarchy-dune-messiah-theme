@@ -41,5 +41,11 @@ omarchy-theme-install https://github.com/OldJobobo/omarchy-dune-messiah-theme
 ## Notes
 
 - This is a light theme. The repo includes `light.mode`, and the palette is built around a pale sand background (`#dcd8d6`) with dark brown text (`#47362b`).
+- `foot.ini` is the source of truth for terminal opacity and blur; the Alacritty, Ghostty, and Kitty configs mirror its `0.75` opacity and enabled blur.
 
-  
+## Attribution
+
+- *Dune* was created by Frank Herbert.
+- Wallpaper imagery comes from the *Dune* screen adaptations produced by Legendary Pictures and distributed by Warner Bros. Pictures.
+- This is an unofficial fan-made theme. All related imagery and marks remain the property of their respective rights holders.
+

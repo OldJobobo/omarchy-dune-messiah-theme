@@ -12,12 +12,12 @@
   --text-selection: #8c4f2a;
 
   /* Border color */
-  --background-modifier-border: #6e6259;
+  --background-modifier-border: #675b53;
 
   /* Semantic heading colors */
   --text-title-h1: #7a3827;
   --text-title-h2: #6f5a36;
-  --text-title-h3: #8a5d24;
+  --text-title-h3: #7f531d;
   --text-title-h4: #8c4f2a;
   --text-title-h5: #6e4633;
   --text-title-h6: #6e4633;
@@ -43,10 +43,10 @@
 
   /* Tags */
   --tag-color: #355f68;
-  --tag-background: #6e6259;
+  --tag-background: #675b53;
 
   /* Graph */
-  --graph-line: #6e6259;
+  --graph-line: #675b53;
   --graph-node: #8c4f2a;
   --graph-node-focused: #8c4f2a;
   --graph-node-tag: #355f68;
@@ -69,8 +69,8 @@
 /* Syntax highlighting */
 .cm-s-obsidian span.cm-keyword { color: #7a3827; }
 .cm-s-obsidian span.cm-string { color: #6f5a36; }
-.cm-s-obsidian span.cm-number { color: #8a5d24; }
-.cm-s-obsidian span.cm-comment { color: #6e6259; }
+.cm-s-obsidian span.cm-number { color: #7f531d; }
+.cm-s-obsidian span.cm-comment { color: #675b53; }
 .cm-s-obsidian span.cm-operator { color: #8c4f2a; }
 .cm-s-obsidian span.cm-def { color: #8c4f2a; }
 

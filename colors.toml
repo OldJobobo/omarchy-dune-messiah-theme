@@ -33,7 +33,7 @@
 
   # Accent and UI colors
   accent = "#8c4f2a"
-  active_border_color = "#a45e33"
+  active_border_color = "#7b3f20"
   active_tab_background = "#8c4f2a"
 
   # Cursor colors
@@ -51,19 +51,19 @@
   color0 = "#dcd8d6" # base
   color1 = "#7a3827" # danger / deleted / error
   color2 = "#6f5a36" # success / created / strings
-  color3 = "#8a5d24" # warning / constants
+  color3 = "#7f531d" # warning / constants
   color4 = "#8c4f2a" # accent / modified / keywords
   color5 = "#6e4633" # secondary accent / visited / UI alt
   color6 = "#355f68" # info / links / types
   color7 = "#47362b" # primary text
 
   # Bright colors (ANSI 8-15)
-  color8 = "#6e6259"  # muted / comments / borders
+  color8 = "#675b53"  # muted / comments / borders
   color9 = "#5f261c"  # bright danger
   color10 = "#5f4c2a" # bright success
   color11 = "#704713" # bright warning
-  color12 = "#a45e33" # bright accent / active border
-  color13 = "#8b5a40" # bright secondary accent
+  color12 = "#7b3f20" # bright accent / active border
+  color13 = "#573324" # bright secondary accent
   color14 = "#244c56" # bright info
   color15 = "#2f2118" # deepest text / high emphasis
 
@@ -80,24 +80,24 @@ mode = "light"
 bg = "#dcd8d6"
 lighter_bg = "#dcd8d6"
 selection = "#8c4f2a"
-muted = "#6e6259"
-dark_fg = "#6e6259"
+muted = "#675b53"
+dark_fg = "#675b53"
 fg = "#47362b"
 light_fg = "#47362b"
 bright_fg = "#2f2118"
 red = "#7a3827"
 green = "#6f5a36"
-yellow = "#8a5d24"
+yellow = "#7f531d"
 blue = "#8c4f2a"
 magenta = "#6e4633"
 cyan = "#355f68"
-orange = "#8a5d24"
+orange = "#7f531d"
 brown = "#452f12"
 dark_bg = "#a5a2a1"
 darker_bg = "#6e6c6b"
 bright_red = "#5f261c"
 bright_green = "#5f4c2a"
 bright_yellow = "#704713"
-bright_blue = "#a45e33"
-bright_magenta = "#8b5a40"
+bright_blue = "#7b3f20"
+bright_magenta = "#573324"
 bright_cyan = "#244c56"

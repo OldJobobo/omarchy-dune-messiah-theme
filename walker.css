@@ -37,10 +37,10 @@
 @define-color base        #dcd8d6;
 @define-color panel       #ebe5e1;
 @define-color layer-1     #d4cbc5;
-@define-color border      #6e6259;
+@define-color border      #675b53;
 @define-color accent      #244c56;
 @define-color copper      #8c4f2a;
-@define-color muted       #6e6259;
+@define-color muted       #675b53;
 @define-color hover       #8c4f2a;
 @define-color selected-bg #d7ccc4;
 @define-color selected-fg #244c56;

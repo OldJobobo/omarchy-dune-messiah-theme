@@ -2,9 +2,9 @@
 -- Source: omarchy-dune-messiah-theme/hyprland.conf
 
 local activeBorderColor = {
-  colors = { "rgba(a45e33ff)", "rgba(8c4f2aff)", "rgba(6e4633ff)" },
+  colors = { "rgba(7b3f20ff)", "rgba(8c4f2aff)", "rgba(6e4633ff)" },
 }
-local inactiveBorderColor = "rgb(6e6259)"
+local inactiveBorderColor = "rgb(675b53)"
 local groupActiveColor = "rgb(8c4f2a)"
 local groupLockedColor = "rgb(355f68)"
 local shadowColor = "rgba(2f2118b8)"

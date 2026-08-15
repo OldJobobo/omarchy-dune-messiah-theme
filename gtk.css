@@ -43,17 +43,17 @@
 @define-color black #dcd8d6;
 @define-color red #7a3827;
 @define-color green #6f5a36;
-@define-color yellow #8a5d24;
+@define-color yellow #7f531d;
 @define-color blue #8c4f2a;
 @define-color magenta #6e4633;
 @define-color cyan #355f68;
 @define-color white #47362b;
-@define-color bright_black #6e6259;
+@define-color bright_black #675b53;
 @define-color bright_red #5f261c;
 @define-color bright_green #5f4c2a;
 @define-color bright_yellow #704713;
-@define-color bright_blue #a45e33;
-@define-color bright_magenta #8b5a40;
+@define-color bright_blue #7b3f20;
+@define-color bright_magenta #573324;
 @define-color bright_cyan #244c56;
 @define-color bright_white #2f2118;
 

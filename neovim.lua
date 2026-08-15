@@ -43,7 +43,7 @@ return {
                 -- Background colors
                 bg = "#dcd8d6",
                 bg_dark = "#dcd8d6",
-                bg_highlight = "#6e6259",
+                bg_highlight = "#675b53",
 
                 -- Foreground colors
                 -- fg: Object properties, builtin types, builtin variables, member access, default text
@@ -51,15 +51,15 @@ return {
                 -- fg_dark: Inactive elements, statusline, secondary text
                 fg_dark = "#47362b",
                 -- comment: Line highlight, gutter elements, disabled states
-                comment = "#6e6259",
+                comment = "#675b53",
 
                 -- Accent colors
                 -- red: Errors, diagnostics, tags, deletions, breakpoints
                 red = "#7a3827",
                 -- orange: Constants, numbers, current line number, git modifications
-                orange = "#a45e33",
+                orange = "#7b3f20",
                 -- yellow: Types, classes, constructors, warnings, numbers, booleans
-                yellow = "#8a5d24",
+                yellow = "#7f531d",
                 -- green: Comments, strings, success states, git additions
                 green = "#6f5a36",
                 -- cyan: Parameters, regex, preprocessor, hints, properties
@@ -69,7 +69,7 @@ return {
                 -- purple: Storage keywords, special keywords, identifiers, namespaces
                 purple = "#6e4633",
                 -- magenta: Function declarations, exception handling, tags
-                magenta = "#8b5a40",
+                magenta = "#573324",
             },
         },
         config = function(_, opts)
